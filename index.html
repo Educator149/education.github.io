@@ -8,7 +8,7 @@
     body {
       margin: 0;
       height: 100vh;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      background: linear-gradient(135deg, #a8e063, #56ab2f);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -30,6 +30,20 @@
       0% { transform: scale(0); }
       100% { transform: scale(1); }
     }
+    .main-photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ff4d6d;
+      margin-bottom: 15px;
+    }
+
+    .rose-img {
+      width: 60px;
+      margin: 10px 0;
+    }
+
 
     h1 {
       color: #ff4d6d;
@@ -77,10 +91,15 @@
 <body>
 
 <div class="card" id="card">
+  <img src = "https://share.icloud.com/photos/0bbIDlV5y_zezcRdNZSVWJ-Iw" alt= "My favorite Person" class="main-photo">
+  
   <h1>Hey You 💕</h1>
   <h2>My Sweetheart,Princess,Queen,</h2>
   <h3>My future Wife👩‍❤️‍👨</h3>
+  <img src="images/rose.png" alt="Rose" class="rose-img">
   <p>
+   
+
     It's Rose day <br><br>
     First day of this valentine week<br></br>
     Eventhough, every signle day is like a valentine day with you😂😂<br></br>
@@ -101,6 +120,9 @@
 </div>
 
 <div class="card hidden" id="final">
+  
+ <img src="ihttps://share.icloud.com/photos/072rs9Z0aaNQfu6vfNOjwEM6Q" alt="Love" class="main-photo">
+
   <h1>I knew you gonna say yes my darling 💕🥰</h1>
   <p>
     Congratulations 🎉<br><br>
@@ -136,7 +158,7 @@
   function createHearts() {
     for (let i = 0; i < 30; i++) {
       const heart = document.createElement("span");
-      heart.innerHTML = "💖";
+      heart.innerHTML = "🌹💚";
       heart.style.left = Math.random() * 100 + "vw";
       heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
       hearts.appendChild(heart);

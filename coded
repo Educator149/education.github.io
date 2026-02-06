@@ -1,0 +1,13 @@
+.main-photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ff4d6d;
+      margin-bottom: 15px;
+    }
+
+    .rose-img {
+      width: 60px;
+      margin: 10px 0;
+    }

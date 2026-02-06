@@ -15,18 +15,23 @@
       font-family: 'Comic Sans MS', cursive, sans-serif;
       overflow: hidden;
     }
-
     .card {
-      background:(135deg, #a8e063, #56ab2f) ;
-      padding: 15px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-      max-width: 90%;
-      animation: pop 2s ease;
+  background: linear-gradient(135deg, #ffffff, #e0ffe0); /* subtle card gradient */
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  max-width: 500px;       /* wider card so text fits better */
+  max-height: 90vh;       /* ensure it fits on screen */
+  overflow-y: auto;       /* scroll if needed */
+  animation: pop 1s ease;
     }
-
-    @keyframes pop {
+    .card h1, .card h2, .card h3, .card h4, .card p {
+  line-height: 1.1;   /* closer lines */
+  margin: 2px 0;      /* less space between elements */
+  font-size: 14px;    /* slightly smaller text */
+}
+      @keyframes pop {
       0% { transform: scale(0); }
       100% { transform: scale(1); }
     }
@@ -42,6 +47,7 @@
 
     h1 {
       color: #ff4d6d;
+      front-size: 24px;
     }
 
     p {

@@ -17,7 +17,7 @@
     }
     .card {
   background: linear-gradient(135deg, #ffffff, #e0ffe0); /* subtle card gradient */
-  padding: 20px;
+  padding: 15px 20px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 20px 40px rgba(0,0,0,0.2);
@@ -30,6 +30,15 @@
   line-height: 1.1;   /* closer lines */
   margin: 2px 0;      /* less space between elements */
   font-size: 14px;    /* slightly smaller text */
+}
+.card h1:first-child {
+  margin-top: 5px;      /* smaller top margin */
+}
+
+.card-photo {
+  margin-top: 10px;     /* space between text and photo */
+  max-width: 100%;      /* make responsive */
+  border-radius: 10px;  /* optional rounded corners */
 }
       @keyframes pop {
       0% { transform: scale(0); }
@@ -47,7 +56,7 @@
 
     h1 {
       color: #ff4d6d;
-      front-size: 24px;
+      
     }
 
     p {
